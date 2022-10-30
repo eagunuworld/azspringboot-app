@@ -14,11 +14,11 @@ spec:
     spec:
       containers:
       - name: my-springboot-app
-        image: myacrrepo4321.azurecr.io/akannan1087/springboot-app:#{Build.BuildId}#
+        image: vanappacr.azurecr.io/eagunuworld/azspringboot-app:#{Build.BuildId}#
         imagePullPolicy: Always
         ports:
         - containerPort: 8085
-# service type loadbalancer       
+# service type loadbalancer
 ---
 apiVersion: v1
 kind: Service
